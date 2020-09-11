@@ -15,6 +15,8 @@
       <div id="header">
         <span id="etsyLogo">Etsy</span>
         <input id="headerInput" type="text" />
+        <i id="timesIcon" class="fa fa-times fa-lg"></i>
+        <i id="searchIcon" class="fa fa-search fa-lg"></i>
         <span id="signInCart">
           <ul id="header-list">
             <li class="header-list-items">Sign in</li>
@@ -26,9 +28,52 @@
       </div>
       <div id="nav-bar">
         <ul id="nav-list">
-          <li class="nav-list-items">Everyday Finds</li>
-          <li class="nav-list-items">Jewelry & Accessories</li>
-          <li class="nav-list-items">Clothing & Shoes</li>
+          <li class="nav-list-items" id="everydayFinds">Everyday Finds</li>
+          <div class="dropDown">
+            <li class="nav-list-items">Jewelry & Accessories</li>
+            <div class="dropContent">
+              <a class="firstAnchor" href="#"
+                >All Jewelry & Accessories <i class="fa fa-arrow-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Accessories <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Bags & Purses <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Necklaces <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Rings <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Earrings <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Bracelets <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >Body Jewelry <i class="fa fa-angle-right"></i
+              ></a>
+              <a class="dropAtags" href="#"
+                >All Jewelry <i class="fa fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+          <div class="dropDown">
+            <li class="nav-list-items">Clothing & Shoes</li>
+            <div class="dropContent">
+              <a class="firstAnchor" href=""
+                >All Clothing & Shoes <i class="fa fa-arrow-right"></i
+              ></a>
+              <a href="">Women's <i class="fa fa-angle-right"></i></a>
+              <a href="">Men's <i class="fa fa-angle-right"></i></a>
+              <a href="">Kids' & Baby <i class="fa fa-angle-right"></i></a>
+              <a href="">Bags & Purses <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+
           <li class="nav-list-items">Home & Living</li>
           <li class="nav-list-items">Wedding & Party</li>
           <li class="nav-list-items">Toys & Entertainment</li>
@@ -36,6 +81,13 @@
           <li class="nav-list-items">Craft Supplies</li>
           <li class="nav-list-items"><i class="fa fa-gift"></i> Gifts</li>
         </ul>
+        <div class="foo">
+          <p>test...</p>
+        </div>
+      </div>
+      <div id="containerBtns">
+        <button id="filterBtn">☰ Filters</button>
+        <button id="sortBtn">↑↓ Sort by: Relevancy ▼</button>
       </div>
       <div id="items-container"></div>
       <div id="footer"></div>

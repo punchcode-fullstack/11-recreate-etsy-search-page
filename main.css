@@ -14,7 +14,7 @@ html {
 }
 
 #etsyLogo {
-  font-size: 32px;
+  font-size: 36px;
   font-family: "Times New Roman", Times, serif;
   padding-left: 52px;
   padding-top: 15px;
@@ -22,12 +22,30 @@ html {
 }
 
 #headerInput {
-  border-radius: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 5px;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
   width: 80%;
   background-color: #efefef;
+  outline: none;
+  position: relative;
+  border: 1px solid #cecece;
+  padding-left: 15px;
+}
+
+#timesIcon {
+  position: absolute;
+  left: 1195px;
+  top: 25px;
+  color: #424242;
+}
+
+#searchIcon {
+  position: absolute;
+  left: 1240px;
+  top: 25px;
+  color: #424242;
 }
 
 #header-list {
@@ -60,6 +78,10 @@ html {
   cursor: pointer;
 }
 
+#everydayFinds {
+  background-color: #dcdcdc;
+}
+
 .nav-list-items {
   list-style: none;
   font-weight: lighter;
@@ -73,3 +95,88 @@ html {
 li:hover {
   border: solid 1px black;
 }
+
+.dropDown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 1190px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: white;
+}
+
+.firstAnchor {
+  font-weight: 500;
+}
+
+.dropContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: 350px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.dropContent a:hover {
+  background-color: #ddd;
+}
+
+.dropDown:hover .dropContent {
+  display: block;
+}
+
+#containerBtns {
+  display: flex;
+}
+
+#filterBtn {
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  margin-left: 35px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: right;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+#sortBtn {
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+.foo {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background: #fff;
+  top: 104px;
+}
+
+/* #nav-list {
+  padding: 20px 0;
+}
+
+#nav-list:hover ~ .foo {
+  display: block;
+}
+
+.foo:hover {
+  display: block;
+} */
