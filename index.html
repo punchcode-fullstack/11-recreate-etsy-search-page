@@ -4,31 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etsy Page</title>
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div id="main-container">
       <div id="header">
         <span id="etsyLogo">Etsy</span>
-        <input id="headerInput" type="text">
+        <input id="headerInput" type="text" />
+        <span id="signInCart">
+          <ul id="header-list">
+            <li class="header-list-items">Sign in</li>
+            <li class="header-list-items">
+              <i class="fa fa-shopping-cart fa-lg"></i>
+            </li>
+          </ul>
+        </span>
       </div>
       <div id="nav-bar">
         <ul id="nav-list">
-            <li>Everyday Finds</li>
-            <li>Jewelry & Accessories</li>
-            <li>Clothing & Shoes</li>
-            <li>Home & Living</li>
-            <li>Wedding & Party</li>
-            <li>Toys & Entertainment</li>
-            <li>Art & Collectibles</li>
-            <li>Craft Supplies</li>
-            <li><i class="fa fa-gift"></i> Gifts</li>
+          <li class="nav-list-items">Everyday Finds</li>
+          <li class="nav-list-items">Jewelry & Accessories</li>
+          <li class="nav-list-items">Clothing & Shoes</li>
+          <li class="nav-list-items">Home & Living</li>
+          <li class="nav-list-items">Wedding & Party</li>
+          <li class="nav-list-items">Toys & Entertainment</li>
+          <li class="nav-list-items">Art & Collectibles</li>
+          <li class="nav-list-items">Craft Supplies</li>
+          <li class="nav-list-items"><i class="fa fa-gift"></i> Gifts</li>
         </ul>
       </div>
       <div id="items-container"></div>
       <div id="footer"></div>
-  </div>
+    </div>
     <script src="items.js"></script>
   </body>
 </html>

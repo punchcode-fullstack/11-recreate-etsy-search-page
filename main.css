@@ -15,10 +15,10 @@ html {
 
 #etsyLogo {
   font-size: 32px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   padding-left: 52px;
   padding-top: 15px;
-  color: #E16D36;
+  color: #e16d36;
 }
 
 #headerInput {
@@ -27,7 +27,23 @@ html {
   margin-bottom: 15px;
   margin-left: 5px;
   width: 80%;
-  background-color: #EFEFEF;
+  background-color: #efefef;
+}
+
+#header-list {
+  display: flex;
+}
+
+.header-list-items {
+  margin-top: 25px;
+  margin-left: 25px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.header-list-items:hover {
+  border: solid 1px white;
+  cursor: pointer;
 }
 
 #nav-bar {
@@ -35,7 +51,7 @@ html {
   height: 34px;
   padding-left: 52px;
   padding-right: 52px;
-  border-bottom: solid 2px #DEDEDE;
+  border-bottom: solid 2px #dedede;
 }
 
 #nav-list {
@@ -44,11 +60,14 @@ html {
   cursor: pointer;
 }
 
-
-li {
+.nav-list-items {
   list-style: none;
   font-weight: lighter;
   font-size: 14px;
+}
+
+.nav-list-items:hover {
+  border: solid 1px white;
 }
 
 li:hover {
