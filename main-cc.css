@@ -1,0 +1,22 @@
+#nav-bar {
+  border: 2px solid red;
+  height: 12rem;
+}
+
+#items-container {
+  border: 2px solid green;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(21, 1f [row-start]);
+}
+
+#items {
+}
+
+#id {
+  border: 2px solid blue;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+}
