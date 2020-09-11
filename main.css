@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: helvetica, arial, sans-serif;
+}
+
+#header {
+  height: 70px;
+  display: flex;
+}
+
+#etsyLogo {
+  font-size: 32px;
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 52px;
+  padding-top: 15px;
+  color: #E16D36;
+}
+
+#headerInput {
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  width: 80%;
+  background-color: #EFEFEF;
+}
+
+#nav-bar {
+  width: 100%;
+  height: 34px;
+  padding-left: 52px;
+  padding-right: 52px;
+  border-bottom: solid 2px #DEDEDE;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+li {
+  list-style: none;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+li:hover {
+  border: solid 1px black;
+}
