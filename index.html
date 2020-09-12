@@ -4,11 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etsy Page</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div id="main-container"></div>
-    <div id="nav-bar"></div>
-    <div id="items-container"></div>
-    <div id="footer"></div>
+    <div id="page-container">
+      <div id="main-container">
+        <a href='#'><img
+          src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft1.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQGSBGe07eUICLKPeQz9TMeGguRmspZvqi5OxUCTENJoOSRI7gR&psig=AOvVaw0RE-SvlgzXdXCoT40mozUV&ust=1599868994135000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiu58rm3-sCFQAAAAAdAAAAABAD"
+        /></a><!--SEARCHBAR-->
+        <div class="searchBar">
+          <input type="search" id="search" placeholder="whiskey" />
+          <button>x</button>
+          <button value="search">magnify</button>
+        </div>
+        <button id="signin" type="submit">Sign in</button>
+        <span id="shoppingCart"><a></a></span>
+      </div>
+      <!--NAV-BAR-->
+      <div id="nav-bar">
+        <nav>
+          <a href="#">Everyday Finds</a>
+          <a href="#">Jewelry & Accessories</a>
+          <a href="#">Clothing & Shoes</a>
+          <a href="#">Home & Living</a>
+          <a href="#">Wedding & Party</a>
+          <a href="#">Toys & Entertainment</a>
+          <a href="#">Art & Collectibles</a>
+          <a href="#">Craft Supplies</a>
+          <a href="#">Gifts</a>
+        </nav>
+      </div>
+      <div id="grid-container">
+        <div id="filter-container">
+          <p class="filter">☰ Filters</p>
+          <p class="sort">↑↓ Sort by: Relevancy ▾</p>
+        </div>
+        <div id="results-container">
+          <p class="results">88,387 results, with Ads �</p>
+        </div>
+        <div id="items-container"></div>
+        <p class="discover">There's so much more for you to discover</p>
+      </div>
+      <div id="footer">
+        <div class='lightBlueMountain'>
+            <p>
+              Yes! Send me exclusive offers, unique gift ideas, and personalized
+              tips for shopping and selling on Etsy.
+            </p>
+          <div class="emailInput">
+              <input type="email" name="email" placeholder="Enter your email" />
+              <button type="submit">Subscribe</button>
+          </div>
+        </div>
+        </div>
+        <div class="bottomLinks">
+          <div class="shop">
+            <h4>Shop</h4>
+            <a href="#"><p>Gift cards</p></a>
+            <a href="#"><p>Etsy blog</p></a>
+          </div>
+          <div class="sell">
+            <h4>Sell</h4>
+            <a href="#"><p>Sell on Etsy</p></a>
+            <a href="#"><p>Teams</p></a>
+            <a href="#"><p>Forums</p></a>
+            <a href="#"><p>Affiliates</p></a>
+          </div>
+          <div class="about">
+            <h4>About</h4>
+            <a href="#"><p>Etsy, Inc.</p></a>
+            <a href="#"><p>Policies</p></a>
+            <a href="#"><p>Investors</p></a>
+            <a href="#"><p>Careers</p></a>
+            <a href="#"><p>Press</p></a>
+            <a href="#"><p>Impact</p></a>
+          </div>
+          <div class="help">
+            <h4>Help</h4>
+            <a href="#"><p>Help Center</p></a>
+            <a href="#"><p>Privacy Settings</p></a>
+            <button type="submit" value="submit">
+              <a href=""></a>Download the Etsy App
+            </button>
+            <div class="socialMediaIcons">
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+            </div>
+          </div>
+        </div>
+        <div class='veryBottom'>
+          <div class='language'>
+            <a>United States</a>
+            <a>English(US)</a>
+            <a>$ (USD)</a>
+          </div>
+          <div class='legal'>
+            <p>2020 Etsy, Inc.</p>
+            <a>Terms of Use</a>
+            <a>Privacy</a>
+            <a>Interest-based ads</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="items.js"></script>
+    <script src="grid.js"></script>
   </body>
 </html>

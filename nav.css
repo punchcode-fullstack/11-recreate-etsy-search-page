@@ -1,0 +1,80 @@
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: black;
+  box-sizing: border-box;
+}
+#main-container img input button {
+  display: block;
+}
+#main-container img {
+  width: 100px;
+  height: auto;
+  margin-left: 40px;
+  align-self: center;
+}
+#main-container {
+  text-decoration: none;
+  font-weight: lighter;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: stretch;
+  margin-top: 10px;
+}
+.searchBar {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 1150px;
+  height: 53px;
+  margin-bottom: 0px;
+}
+.searchBar input {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(238, 236, 236);
+  border-radius: 70px;
+  border: 1px solid rgb(171, 168, 168);
+  padding-left: 15px;
+  align-self: center;
+}
+.searchBar input::placeholder {
+  color: black;
+  font-size: 16px;
+}
+#signin {
+  border-radius: 60px;
+  width: 75px;
+  height: 35px;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  align-self: center;
+  background-color: white;
+}
+#signin:hover {
+  background-color: rgb(240, 237, 237);
+}
+
+#nav-bar {
+  padding: 10px 15px 0 15px;
+  border-bottom: 2px solid rgb(211, 209, 209);
+}
+
+#nav-bar a {
+  display: block;
+  font-weight: 100;
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-bottom: 15px;
+}
+#nav-bar nav a:hover {
+  border-bottom: 2px solid black;
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  margin-bottom: 0;
+}

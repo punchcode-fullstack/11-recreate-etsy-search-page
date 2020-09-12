@@ -1,0 +1,95 @@
+#footer {
+    width: 100%;
+    margin-top: 200px;
+    border-top: 1px solid rgb(223, 223, 223);
+  }
+  .emailInput {
+    text-align: center;
+    height: 50px;
+  }
+  .emailInput input {
+    height: 100%;
+    width: 500px;
+    border-radius: 65px;
+    padding-left: 15px;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid rgb(171, 168, 168);
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6);
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+  }
+  .lightBlueMountain {
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: rgb(210, 223, 240);
+  }
+  .lightBlueMountain p {
+    padding-top: 90px;
+    padding-bottom: 20px;
+    color: rgb(43, 42, 42);
+  }
+  .bottomLinks {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    background-color: rgb(52, 70, 103);
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    /* padding: 60px 60px 30px 60px; */
+  }
+  .bottomLinks a p {
+    font-weight: 200;
+    font-size: 12px;
+    padding-top: 15px;
+  }
+  .shop,
+  .sell,
+  .about,
+  .help {
+    padding-right: 260px;
+  }
+  .bottomLinks p,
+  .bottomLinks h4 {
+    display: block;
+    color: white;
+    padding-left: 30px;
+  }
+  h4 {
+    font-weight: 500;
+  }
+  .veryBottom {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(31, 31, 67);
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .language {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-left: 30px;
+  }
+  .legal {
+    display: flex;
+    flex-flow: row nowrap;
+    padding-right: 30px;
+  }
+  .veryBottom a, .veryBottom p {
+    display: block;
+    color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .language a {
+    font-weight: 400;
+    font-size: 13px;
+  }
+  .legal {
+    font-weight: 200;
+    font-size: 13px;
+  }
+  .legal a {
+    text-decoration: underline;
+  }
