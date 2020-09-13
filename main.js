@@ -29,5 +29,5 @@ const xbtn = document.querySelector(".xbtn");
 input.addEventListener("focus", function () {
   btn.style.backgroundColor = "black";
   btn.style.color = "white";
-  xbtn.classList.toggle(".active");
+  xbtn.classList.toggle("active");
 });
