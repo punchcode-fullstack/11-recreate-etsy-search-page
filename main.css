@@ -32,6 +32,7 @@ html {
   position: relative;
   border: 1px solid #cecece;
   padding-left: 15px;
+  font-size: 16px;
 }
 
 #timesIcon {
@@ -76,16 +77,20 @@ html {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
+  position: relative;
 }
 
-#everydayFinds {
+/* #everydayFinds {
   background-color: #dcdcdc;
-}
+} */
 
 .nav-list-items {
   list-style: none;
   font-weight: lighter;
   font-size: 14px;
+  padding-bottom: 17px;
+  padding-left: 25px;
+  padding-right: 21px;
 }
 
 .nav-list-items:hover {
@@ -96,23 +101,204 @@ li:hover {
   border: solid 1px black;
 }
 
-.dropDown {
-  position: relative;
-  display: inline-block;
-}
+/* .dropDown {
+  width: 100%;
+} */
 
 .dropContent {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  min-width: 1190px;
+  width: 100%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   background-color: white;
+  left: 0;
+  top: 34px;
+  
 }
 
-.firstAnchor {
+#anchorContainer {
+  border-right: solid 1px #dedede;
+  width: 30%;
+}
+
+#firstAnchor {
   font-weight: 500;
+  
+}
+
+#dropC2 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC2 a {
+  padding-top: 13px;
+  
+}
+
+.anchorIcons {
+  position: absolute;
+  left: 385px;
+}
+
+#dropC2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 295px;
+  width: 42%;
+  position: absolute;
+}
+
+#dropC2Hide {
+  /* display: none; */
+  width: 42%;
+  visibility: hidden;
+  position: relative;
+}
+
+#dropC3 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+#dropC3 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC3 a {
+  padding-top: 13px;
+  
+}
+
+#dropC4 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+#dropC4 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC4 a {
+  padding-top: 13px;
+  
+}
+
+#dropC5 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 280px;
+}
+
+#dropC5 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC5 a {
+  padding-top: 13px;
+  
+}
+
+#dropC6 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 180px;
+}
+
+#dropC6 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC6 a {
+  padding-top: 13px;
+  
+}
+
+#dropC7 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+#dropC7 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC7 a {
+  padding-top: 13px;
+  
+}
+
+#dropC8 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 240px;
+}
+
+#dropC8 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC8 a {
+  padding-top: 13px;
+  
+}
+
+#accessoriesShow:hover  #dropC2Hide {
+  display: block;
+}
+
+
+#boldArrow {
+  left:185px;
+  top: 13px;
+}
+
+#boldArrow2 {
+  left:95px;
+  top: 13px;
 }
 
 .dropContent a {
@@ -120,9 +306,12 @@ li:hover {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  min-width: 350px;
+  min-width: 275px;
   font-size: 14px;
   font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .dropContent a:hover {
@@ -161,22 +350,6 @@ li:hover {
   cursor: pointer;
 }
 
-.foo {
-  display: none;
-  width: 100%;
-  position: absolute;
-  background: #fff;
-  top: 104px;
+#showContent {
+  display: flex;
 }
-
-/* #nav-list {
-  padding: 20px 0;
-}
-
-#nav-list:hover ~ .foo {
-  display: block;
-}
-
-.foo:hover {
-  display: block;
-} */
