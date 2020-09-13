@@ -42,11 +42,16 @@ html {
   color: #424242;
 }
 
+#timesIcon:hover {
+  cursor: pointer;
+}
+
 #searchIcon {
   position: absolute;
   left: 1240px;
   top: 25px;
   color: #424242;
+  cursor: pointer;
 }
 
 #header-list {
