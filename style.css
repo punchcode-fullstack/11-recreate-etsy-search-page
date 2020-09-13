@@ -3,64 +3,67 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: Helvetica;
+  font-weight: lighter;
+}
 
 .container1 {
-    display: flex;
-    margin: 18px 38px;
-
+  display: flex;
+  margin: 18px 38px;
 }
 #logo {
-    width: 7%;
-    /* margin-bottom: 7px; */
-    margin-top: -12px;
+  width: 7%;
+
+  margin-top: -4px;
 }
 
-
 input {
-    width: 80%;
-    height: 46px;
-    border: 1px solid #D0D0D0;
-    border-radius: 25px;
-    background: #EFEFEF;
-    /* margin-top: 10px; */
-    outline: none;
-    padding: 23px;
+  width: 95%;
+  height: 46px;
+  border: 1px solid #d0d0d0;
+  border-radius: 25px;
+  background: #efefef;
+  /* margin-top: 10px; */
+  outline: none;
+  padding: 23px;
 }
 
 section {
-
-    margin-top: 15px;
-    
-    margin-left: 15px;
+  position: relative;
+  left: 13px;
 }
 
-#cart{
-    width: 10%;
+#cart {
+  width: 10%;
+  margin-top: 10px;
+  position: relative;
+  top: 4px;
 }
 
-/* nav {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  gap: 10px;
-} */
 .nav-bar2 {
-    /* justify-content: space-around; */
-    margin: 10px 20px;
+  margin: 10px 20px;
 }
-
 
 a {
-    color: #363636;
-    text-decoration: none;
-    padding-right: 28px;
+  color: #363636;
+  text-decoration: none;
+  padding-right: 28px;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  background: white;
+  display: flex;
+  width: 100%;
+  position: relative;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 25px;
-
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 25px;
 }
 
 /* grid products below */
@@ -92,35 +95,50 @@ main {
 }
 
 .products p {
-  margin: 0;
+  margin: 5px;
 }
 
-.desc {
+.board {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* #footer-img {
-    width: 100%;
+#shipping {
+  background-color: #d3e2d3;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px;
 }
 
+/* #footer-img {
+    width: 100%;
+} */
+#footer {
+  background-image: url("images/background.png");
+  width: 100%;
+  height: 500px;
+}
 
+h3 {
+  font-weight: lighter;
+  padding: 141px 260px;
+}
+
+#subscribe {
+  padding-top: 30px;
+}
 
 #footer2 {
-    background-color: #1F203D;
-    color: white;
-    padding: 55px 245px;
-    
-    margin-top: -4px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #1f203d;
+  color: white;
+  padding: 55px 245px;
+
+  margin-top: -4px;
 }
 
 .ftr {
-    color: white;
-} */
-
-#footer {
-    background-image: url("images/background.png");
-    width: 100%;
-    height: 50%;
+  color: white;
 }
