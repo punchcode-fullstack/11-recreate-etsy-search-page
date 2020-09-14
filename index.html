@@ -29,25 +29,75 @@
       </section>
     </div>
 
-    <div class="nav-bar2 dropdown">
-      <ul>
-        <li><a class="active" href="#">Everyday Finds</a></li>
-        <li><a href="#">Jewelry & Accessories</a></li>
-        <li><a href="#">Clothing & Shoes</a></li>
-        <li><a href="#">Home & Living</a></li>
-        <li><a href="#">Wedding & Party</a></li>
-        <li><a href="#">Toys & Entertainment</a></li>
-        <li><a href="#">Art & Collectibles</a></li>
-        <li><a href="#">Craft Supplies</a></li>
-        <li><a class="fa fa-gift" href="#">Gifts</a></li>
-      </ul>
+    <!-- <div class="nav-bar2 dropdown"> -->
+      <div id="bottomNav">
+        <li id="firstNav" class="cool-link">Everyday Finds</li>
+
+       <div class="jewelerydropdown">
+           
+            <li class="cool-link">Jewelry & Accessories</li>
+            <div class="dropcontent">
+                <div class="accDropDown">
+                    <div class='acc-Flex'>
+                        <div class='insideContent'>
+                            <div class='left'>
+                                <a href="#">All Jewelry & Accessories<i  class="fa fa-arrow-right"></i></a>
+                                <a id="Accessories" href="#">Accessories <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Bags & Purses <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Necklaces <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Rings <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Earrings <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Bracelets <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">Body Jewelry <i id="icons" class="fa fa-angle-right"></i></a>
+                                <a href="#">All Jewelry <i  class="fa fa-arrow-right"></i></a>
+                            </div>
+                            <div class='middle'>
+                                <a href="#">Hats & Caps</a>
+                                <a href="#">Beanies & Winter Hats</a>
+                                <a href="#">Hair Accessories</a>
+                                <a href="#">Headbands</a>
+                                <a href="#">Fascinators & Mini Hats</a>
+                                <a href="#">Wreaths & Tiaras</a>
+                                <a href="#">Sunglasses & Eyewear</a>
+                            </div>
+                            <div class='right'>
+                                <img
+                                    src="https://i.etsystatic.com/8595828/c/2068/1643/347/721/il/663a12/1888311329/il_340x270.1888311329_cctg.jpg">
+                                <p id="muted-text">Editor's Picks</p>
+                                <h4>Jewelry, handbags, and accessories<h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="jewelerydropdown">
+            <li class="cool-link">Clothing & Shoes</li>
+            <!-- <div class="dropcontent">
+                <a href="#">All Clothing & Shoes <i class="fa fa-arrow-right"></i></a>
+                <a href="#">Women's <i class="fa fa-angle-right"></i></a>
+                <a href="#">Men's <i class="fa fa-angle-right"></i></a>
+                <a href="#">Kid's & Baby's <i class="fa fa-angle-right"></i></a>
+                <a href="#">Bag's & Purses <i class="fa fa-angle-right"></i></a>
+            </div> -->
+        </div>
+        <li id="alignWLink" class="cool-link">Home & Living</li>
+        <li id="alignWLink" class="cool-link">Wedding & Party</li>
+        <li id="alignWLink" class="cool-link">Toys & Entertainment</li>
+        <li id="alignWLink" class="cool-link">Art & Collectibles</li>
+        <li id="alignWLink" class="cool-link">Craft Supplies</li>
+        <li class="cool-link"><i class="fa fa-gift"></i> Gifts</li>
+        
     </div>
     <hr />
 
     <button type="button" class="btn">
-      <i class="fa fa-filter"></i>Filters
+      <!-- <i class="fa fa-filter"></i>Filters -->
+      <img id="filters" src="https://www.flaticon.com/premium-icon/icons/svg/3161/3161370.svg" alt="filter"> Filters
     </button>
-    <button type="button">Sort by: Relevancy</button>
+    <button type="button">
+     <img id="sort" src="https://www.flaticon.com/svg/static/icons/svg/2223/2223723.svg" alt="sort">
+      Sort by: Relevancy</button>
     <!-- grid pictures container below -->
     <div class="container2">
       <main id="products"></main>
@@ -55,13 +105,107 @@
 
     <hr />
     <hr />
-    <div id="footer">
+
+
+
+
+
+
+
+    
+    <!-- <div id="footer">
       <h3>
         Yes! Send me exclusive offers, unique gift ideas, and personalized tips
         for shopping and selling on Etsy.
       </h3>
       <input id="subscribe" type="email" placeholder="Enter your email" />
-    </div>
+      <section class="shop-sell-ftr">
+      <p>Shop</p>
+      
+      <p>Sell</p>
+      <p>About</p>
+      <p>Help</p>
+      </section>
+      <section class="shop-footer">
+        <p>Gift Cards</p>
+        <p>Etsy blog</p>
+      </section>
+    </div> -->
+    
+
+
+
+
+    <section class="footer">
+      <div class="subscribe">
+        <p>
+          Yes! Send me exclusive offers, unique gift ideas, and personalized
+          tips for shopping and selling on Etsy.
+        </p>
+        <div class="email">
+          <input
+            class="emailinput"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="emailbtn">Subscribe</button>
+        </div>
+      </div>
+      <div class="rows">
+        <div class="row1">
+          <ul>
+            <li id="head">Shop</li>
+            <li>Gift Cards</li>
+            <li>Etsy blog</li>
+          </ul>
+        </div>
+        <div class="row2">
+          <ul>
+            <li id="head">Sell</li>
+            <li>Sell on Etsy</li>
+            <li>Teams</li>
+            <li>Forums</li>
+            <li>Affiliates</li>
+          </ul>
+        </div>
+        <div class="row3">
+          <ul>
+            <li id="head">About</li>
+            <li>Etsy Inc.</li>
+            <li>Policies</li>
+            <li>Investors</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Impact</li>
+          </ul>
+        </div>
+        <div class="row4">
+          <ul>
+            <li id="head">Help</li>
+            <li>Help Center</li>
+            <li>Privacy settings</li>
+            <button class="download">
+              <i class="fa fa-etsy"> </i> Download the Etsy app
+            </button>
+
+            <li class="media">
+              <i id="icons2" class="fa fa-instagram"></i>
+              <i id="icons2" class="fa fa-facebook-square"></i>
+              <i id="icons2" class="fa fa-pinterest"></i>
+              <i id="icons2" class="fa fa-twitter"></i>
+              <i id="icons2" class="fa fa-youtube-play"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+
+
+      
+
+   
     <div id="footer2">
       <h4>United States | English(US) | $ (USD)</h4>
       <p>&#169; 2020 Etsy, Inc.</p>
