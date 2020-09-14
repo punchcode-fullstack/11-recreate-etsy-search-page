@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="https://use.fontawesome.com/37c56b304c.js"></script>
   </head>
   <body>
     <div id="main-container">
@@ -172,8 +173,76 @@
         <button id="sortBtn">↑↓ Sort by: Relevancy ▼</button>
       </div>
       <div id="items-container"></div>
-      <div id="footer"></div>
+      <div id="footer">
+      <div class="footer1">
+        <h2>
+          Yes! Send me exclusive offers, unique gift ideas, and personalized
+          tips for shopping and selling on Etsy.
+        </h2>
+        <form id="emailForm" action="">
+          <label for="email"></label>
+          <input id="email" name="email" type="email" placeholder="Enter your email"/>
+          <button id="subscribe">Subscribe</button>
+        </form>
       </div>
+      <div class="footer2">
+        <div class="footerCells">
+          <ul><h3>Shop</h3></ul>
+          <a href="#"><li>Gift cards</li></a>
+          <a href="#"><li>Etsy blog</li></a>
+        </div>
+        <div class="footerCells">
+          <ul><h3>Sell</h3></ul>
+          <a href="#"><li>Sell on Etsy</li></a>
+          <a href="#"><li>Teams</li></a>
+          <a href="#"><li>Forums</li></a>
+          <a href="#"><li>Affiliates</li></a>
+        </div>
+        <div class="footerCells">
+          <ul><h3>About</h3></ul>
+          <a href="#"><li>Etsy, Inc.</li></a>
+          <a href="#"><li>Policies</li></a>
+          <a href="#"><li>Investors</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Press</li></a>
+          <a href="#"><li>Impact</li></a>
+        </div>
+        <div class="footerCells">
+          <ul><h3>Help</h3></ul>
+          <a href="#"><li>Help center</li></a>
+          <a href="#"><li>Privacy settings</li></a>
+           <div>
+            <button id="etsyApp">
+              <a href="https://www.etsy.com/mobile">
+              <i class="fa fa-etsy etsyIcon" aria-hidden="true"></i> Download the Etsy
+              app
+            </button></a>
+          </div>
+            <div id="soMediaContainer">
+            <a href="https://www.instagram.com/etsy/" target="_blank"><i class="fa fa-instagram soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/Etsy" target="_blank"><i class="fa fa-facebook-official soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://www.pinterest.com/etsy/" target="_blank"><i class="fa fa-pinterest soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/etsy" target="_blank"><i class="fa fa-twitter soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/etsy" target="_blank"><i class="fa fa-youtube-play soMediaIcon" aria-hidden="true"></i></a>
+
+          </div>
+        </div>
+      </div>
+          <div class="footer3">
+            <div>
+              <button id="regionFilter">
+                United States | English (US) | $(USD)
+              </button>
+            </div>
+            <div class="footerText">
+              <span>© 2020 Etsy, Inc.</span>
+              <span><a href="#">Terms of Use</a></span>
+              <span><a href="#">Privacy</a></span>
+              <span><a href="#">Interest-based-ads</a></span>
+            </div>
+          </div>
+        </div>
+    <script src="items.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

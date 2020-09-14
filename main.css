@@ -357,4 +357,256 @@ html {
 
 #showContent {
   display: flex;
+  margin: 0 0;
+  padding: 0 0;
+}
+/*  */
+/* Everything in here until the footer styles the grid */
+/*  */
+#items-container {
+  font-family: sans-serif;
+  display: grid;
+  grid-gap: 1em;
+  /* grid-template-rows: 20% 20% 20% 20% 20%; */
+  grid-template-columns: repeat(5, 20%);
+  justify-content: center;
+  margin: 0% 5%;
+}
+#items-container a {
+  text-decoration: none;
+}
+.cells h1 {
+  font-size: 15px;
+  color: #000;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1.5% 0%;
+}
+.footer1 h2 {
+  color: #595959;
+  font-size: 18px;
+  /* font-weight: lighter; */
+  /* font-family: helvetica; */
+  margin: 0% auto 2%;
+  text-align: center;
+}
+
+div p {
+  font-weight: lighter;
+  margin: 0.5% 0%;
+  font-size: 12px;
+  color: #595959;
+}
+.rating {
+  font-weight: lighter;
+  margin: 0.5% 0%;
+  font-size: 13px;
+}
+.price {
+  /* font-weight: initial; */
+  margin: 0.5% 0%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cells {
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #000000; */
+}
+.favIcon {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(220px) translateY(20px);
+  background: #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 55%;
+}
+/* Ended up setting a static height for the full_x_full images to look more c r i s p */
+.images {
+  height: 205px;
+  width: 100%;
+  transition: box-shadow 0.2s linear;
+}
+
+.images:hover {
+  box-shadow: 0px 0px 10px 2px rgba(130, 130, 130);
+}
+.hidden {
+  display: none;
+}
+/*  */
+/* Everything past here styles the footer and it's children */
+/*  */
+#footer {
+  padding: 1% 0%;
+}
+.footer1 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* margin: 7% auto 5%; */
+  align-items: center;
+  background: #d0e2f2;
+  height: 135px;
+  padding-top: 3%;
+}
+#email {
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 40%;
+  height: 55px;
+  padding: 0% 2%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  border: none;
+  flex-grow: 1;
+}
+#emailForm {
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 40%;
+  height: 55px;
+  padding: 0% 2%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+/* input { */
+/* border: none; */
+/* width: 30%; */
+/* height: 40px; */
+/* flex-grow: 1; */
+/* border-radius: 30px 30px; */
+/* } */
+input:focus {
+  outline: none;
+}
+form {
+  border: 1px solid #000;
+  border-radius: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+#subscribe {
+  border: none;
+  background: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+.footer2 {
+  font-family: sans-serif;
+  padding: 2% 0%;
+  background: #283e5f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0% 2%; */
+}
+.footerCells {
+  display: flex;
+  flex-flow: column;
+  padding: 0% 2%;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.footerCells ul {
+  margin: 0% 0% 20px;
+}
+.footerCells li {
+  margin: 0% 0% 15px;
+  list-style-type: none;
+}
+.footerCells > a {
+  text-decoration: none;
+}
+a:link {
+  color: #fff;
+}
+a:hover {
+  text-decoration: initial;
+}
+a:visited {
+  color: #fff;
+}
+#etsyApp {
+  background: #283e5f;
+  height: 35px;
+  width: 80%;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin: 15px 0 20px;
+}
+button > a {
+  text-decoration: none;
+}
+.etsyIcon {
+  color: #283e5f;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+}
+#soMediaContainer {
+  display: inline-flex;
+}
+#soMediaContainer > a {
+  text-decoration: none;
+}
+.soMediaIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  font-size: 30px;
+  border-radius: 25px;
+  transition: background 0.2s linear;
+  margin-right: 3px;
+}
+.soMediaIcon:hover {
+  border-radius: 25px;
+  background: rgba(130, 130, 130, 0.5);
+}
+.footer3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #20203d;
+  color: #fff;
+  padding: 10px 25px;
+}
+#regionFilter {
+  background: none;
+  height: 35px;
+  /* box-shadow: none; */
+  /* width: 80%; */
+  /* border: 2px solid #fff; */
+  border: none;
+  border-radius: 25px;
+  margin: 10px 0;
+  color: #fff;
+}
+.footerText {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  width: 40%;
+  justify-content: space-around;
+}
+a:hover {
+  cursor: pointer;
 }
