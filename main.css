@@ -102,9 +102,9 @@ html {
   border: solid 1px white;
 }
 
-li:hover {
+/* li:hover {
   border: solid 1px black;
-}
+} */
 
 /* .dropDown {
   width: 100%;

@@ -3,14 +3,6 @@ document.getElementById('accessoriesShow').onmouseover = function(){
   document.getElementById('dropC2Hide').style.visibility = 'visible';
 }
 
-// document.getElementById('dropC2').onmouseover = function(){
-//   document.getElementById('dropC2').style.visibility = 'visible';
-// }
-
-// document.getElementById('dropC2').onmouseout = function(){
-//   document.getElementById('dropC2').style.visibility = 'hidden';
-// }
-
 document.getElementById('jewelryAnchor').onmouseover = function(){
   document.getElementById('dropC2Hide').style.visibility = 'visible';
 }
