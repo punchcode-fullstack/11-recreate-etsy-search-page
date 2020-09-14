@@ -3,12 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etsy Page</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Whiskey | Etsy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://www.etsy.com/images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
-    <div id="main-container"></div>
-    <div id="nav-bar"></div>
-    <div id="items-container"></div>
-    <div id="footer"></div>
+    <div class="container">
+      <section class="top">
+        <div class="logo">
+          <img src="https://cdn.worldvectorlogo.com/logos/etsy.svg" />
+        </div>
+        <div class="search">
+          <input type="text" class="searchinput" placeholder="Whiskey" />
+          <div class="xbtn">&times;</div>
+          <button type="submit" class="searchbtn">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+        <button class="sign">Sign in</button>
+        <button class="cart">
+          <img src="https://static.thenounproject.com/png/2311218-200.png" />
+        </button>
+      </section>
+      <section>
+        <div class="nav">
+          <p>Everyday Finds</p>
+          <p>Jewelry & Accessories</p>
+          <p>Clothing & Shoes</p>
+          <p>Home & Living</p>
+          <p>Wedding & Party</p>
+          <p>Toys & Entertainment</p>
+          <p>Art & Collectibles</p>
+          <p>Craft Supplies</p>
+          <p><i class="fa fa-gift"></i> Gifts</p>
+        </div>
+      </section>
+      <section>
+        <button class="filter"><img src="images/filter.png" /> Filters</button>
+        <button class="filter">
+          <img src="images/arrow.png" /> Sort by: Relevancy
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <span class="result"
+          >88,496 results, with Ads <i class="fa fa-question-circle"></i>
+        </span>
+      </section>
+      <section>
+        <main id="products"></main>
+      </section>
+    </div>
+    <section class="footer">
+      <div class="subscribe">
+        <p>
+          Yes! Send me exclusive offers, unique gift ideas, and personalized
+          tips for shopping and selling on Etsy.
+        </p>
+        <div class="email">
+          <input
+            class="emailinput"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <button type="submit" class="emailbtn">Subscribe</button>
+        </div>
+      </div>
+      <div class="rows">
+        <div class="row1">
+          <ul>
+            <li id="head">Shop</li>
+            <li>Gift Cards</li>
+            <li>Etsy blog</li>
+          </ul>
+        </div>
+        <div class="row2">
+          <ul>
+            <li id="head">Sell</li>
+            <li>Sell on Etsy</li>
+            <li>Teams</li>
+            <li>Forums</li>
+            <li>Affiliates</li>
+          </ul>
+        </div>
+        <div class="row3">
+          <ul>
+            <li id="head">About</li>
+            <li>Etsy Inc.</li>
+            <li>Policies</li>
+            <li>Investors</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Impact</li>
+          </ul>
+        </div>
+        <div class="row4">
+          <ul>
+            <li id="head">Help</li>
+            <li>Help Center</li>
+            <li>Privacy settings</li>
+            <button class="download">
+              <i class="fa fa-etsy"> </i> Download the Etsy app
+            </button>
+
+            <li class="media">
+              <i id="icons" class="fa fa-instagram"></i>
+              <i id="icons" class="fa fa-facebook-square"></i>
+              <i id="icons" class="fa fa-pinterest"></i>
+              <i id="icons" class="fa fa-twitter"></i>
+              <i id="icons" class="fa fa-youtube-play"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="items.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
