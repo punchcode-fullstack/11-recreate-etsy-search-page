@@ -1,0 +1,612 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: helvetica, arial, sans-serif;
+}
+
+#header {
+  height: 70px;
+  display: flex;
+}
+
+#etsyLogo {
+  font-size: 36px;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 52px;
+  padding-top: 15px;
+  color: #e16d36;
+}
+
+#headerInput {
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  width: 80%;
+  background-color: #efefef;
+  outline: none;
+  position: relative;
+  border: 1px solid #cecece;
+  padding-left: 15px;
+  font-size: 16px;
+}
+
+#timesIcon {
+  position: absolute;
+  left: 1195px;
+  top: 25px;
+  color: #424242;
+}
+
+#timesIcon:hover {
+  cursor: pointer;
+}
+
+#searchIcon {
+  position: absolute;
+  left: 1240px;
+  top: 25px;
+  color: #424242;
+  cursor: pointer;
+}
+
+#header-list {
+  display: flex;
+}
+
+.header-list-items {
+  margin-top: 25px;
+  margin-left: 25px;
+  list-style: none;
+  font-size: 14px;
+}
+
+.header-list-items:hover {
+  border: solid 1px white;
+  cursor: pointer;
+}
+
+#nav-bar {
+  width: 100%;
+  height: 34px;
+  padding-left: 52px;
+  padding-right: 52px;
+  border-bottom: solid 2px #dedede;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+/* #everydayFinds {
+  background-color: #dcdcdc;
+} */
+
+.nav-list-items {
+  list-style: none;
+  font-weight: lighter;
+  font-size: 14px;
+  padding-bottom: 17px;
+  padding-left: 25px;
+  padding-right: 21px;
+}
+
+.nav-list-items:hover {
+  border: solid 1px white;
+}
+
+/* li:hover {
+  border: solid 1px black;
+} */
+
+/* .dropDown {
+  width: 100%;
+} */
+
+.dropContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  background-color: white;
+  left: 0;
+  top: 34px;
+  
+}
+
+#anchorContainer {
+  border-right: solid 1px #dedede;
+  width: 30%;
+}
+
+#firstAnchor {
+  font-weight: 500;
+  
+}
+
+#dropC2 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC2 a {
+  padding-top: 13px;
+  
+}
+
+.anchorIcons {
+  position: absolute;
+  left: 385px;
+}
+
+#dropC2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 295px;
+  width: 42%;
+  position: absolute;
+}
+
+#dropC2Hide {
+  /* display: none; */
+  width: 42%;
+  visibility: hidden;
+  position: relative;
+}
+
+#dropC3 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+#dropC3 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC3 a {
+  padding-top: 13px;
+  
+}
+
+#dropC4 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 250px;
+}
+
+#dropC4 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC4 a {
+  padding-top: 13px;
+  
+}
+
+#dropC5 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 280px;
+}
+
+#dropC5 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC5 a {
+  padding-top: 13px;
+  
+}
+
+#dropC6 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 180px;
+}
+
+#dropC6 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC6 a {
+  padding-top: 13px;
+  
+}
+
+#dropC7 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+}
+
+#dropC7 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC7 a {
+  padding-top: 13px;
+  
+}
+
+#dropC8 {
+  display: flex;
+  width: 42%;
+  position: absolute;
+  visibility: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 240px;
+}
+
+#dropC8 .boldAnchor {
+  font-size: 18px;
+  font-weight: 400;
+  padding-bottom: 2px;
+}
+
+#dropC8 a {
+  padding-top: 13px;
+  
+}
+
+#accessoriesShow:hover  #dropC2Hide {
+  display: block;
+}
+
+
+#boldArrow {
+  left:185px;
+  top: 13px;
+}
+
+#boldArrow2 {
+  left:95px;
+  top: 13px;
+}
+
+.dropContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: 275px;
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.dropContent a:hover {
+  background-color: #ddd;
+}
+
+.dropDown:hover .dropContent {
+  display: block;
+}
+
+#containerBtns {
+  display: flex;
+}
+
+#filterBtn {
+  height: 40px;
+  width: 90px;
+  border-radius: 20px;
+  margin-left: 35px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: right;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+#sortBtn {
+  height: 40px;
+  width: 200px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  padding-right: 15px;
+  cursor: pointer;
+}
+
+#showContent {
+  display: flex;
+  margin: 0 0;
+  padding: 0 0;
+}
+/*  */
+/* Everything in here until the footer styles the grid */
+/*  */
+#items-container {
+  font-family: sans-serif;
+  display: grid;
+  grid-gap: 1em;
+  /* grid-template-rows: 20% 20% 20% 20% 20%; */
+  grid-template-columns: repeat(5, 20%);
+  justify-content: center;
+  margin: 0% 5%;
+}
+#items-container a {
+  text-decoration: none;
+}
+.cells h1 {
+  font-size: 15px;
+  color: #000;
+  font-weight: lighter;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 1.5% 0%;
+}
+.footer1 h2 {
+  color: #595959;
+  font-size: 18px;
+  /* font-weight: lighter; */
+  /* font-family: helvetica; */
+  margin: 0% auto 2%;
+  text-align: center;
+}
+
+div p {
+  font-weight: lighter;
+  margin: 0.5% 0%;
+  font-size: 12px;
+  color: #595959;
+}
+.rating {
+  font-weight: lighter;
+  margin: 0.5% 0%;
+  font-size: 13px;
+}
+.price {
+  /* font-weight: initial; */
+  margin: 0.5% 0%;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cells {
+  /* width: 80%; */
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #000000; */
+}
+.favIcon {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateX(220px) translateY(20px);
+  background: #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 55%;
+}
+/* Ended up setting a static height for the full_x_full images to look more c r i s p */
+.images {
+  height: 205px;
+  width: 100%;
+  transition: box-shadow 0.2s linear;
+}
+
+.images:hover {
+  box-shadow: 0px 0px 10px 2px rgba(130, 130, 130);
+}
+.hidden {
+  display: none;
+}
+/*  */
+/* Everything past here styles the footer and it's children */
+/*  */
+#footer {
+  padding: 1% 0%;
+}
+.footer1 {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  /* margin: 7% auto 5%; */
+  align-items: center;
+  background: #d0e2f2;
+  height: 135px;
+  padding-top: 3%;
+}
+#email {
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 40%;
+  height: 55px;
+  padding: 0% 2%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  border: none;
+  flex-grow: 1;
+}
+#emailForm {
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 40%;
+  height: 55px;
+  padding: 0% 2%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+/* input { */
+/* border: none; */
+/* width: 30%; */
+/* height: 40px; */
+/* flex-grow: 1; */
+/* border-radius: 30px 30px; */
+/* } */
+input:focus {
+  outline: none;
+}
+form {
+  border: 1px solid #000;
+  border-radius: 30px 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+#subscribe {
+  border: none;
+  background: transparent;
+}
+button:hover {
+  cursor: pointer;
+}
+.footer2 {
+  font-family: sans-serif;
+  padding: 2% 0%;
+  background: #283e5f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* margin: 0% 2%; */
+}
+.footerCells {
+  display: flex;
+  flex-flow: column;
+  padding: 0% 2%;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.footerCells ul {
+  margin: 0% 0% 20px;
+}
+.footerCells li {
+  margin: 0% 0% 15px;
+  list-style-type: none;
+}
+.footerCells > a {
+  text-decoration: none;
+}
+a:link {
+  color: #fff;
+}
+a:hover {
+  text-decoration: initial;
+}
+a:visited {
+  color: #fff;
+}
+#etsyApp {
+  background: #283e5f;
+  height: 35px;
+  width: 80%;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  margin: 15px 0 20px;
+}
+button > a {
+  text-decoration: none;
+}
+.etsyIcon {
+  color: #283e5f;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15%;
+}
+#soMediaContainer {
+  display: inline-flex;
+}
+#soMediaContainer > a {
+  text-decoration: none;
+}
+.soMediaIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  font-size: 30px;
+  border-radius: 25px;
+  transition: background 0.2s linear;
+  margin-right: 3px;
+}
+.soMediaIcon:hover {
+  border-radius: 25px;
+  background: rgba(130, 130, 130, 0.5);
+}
+.footer3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #20203d;
+  color: #fff;
+  padding: 10px 25px;
+}
+#regionFilter {
+  background: none;
+  height: 35px;
+  /* box-shadow: none; */
+  /* width: 80%; */
+  /* border: 2px solid #fff; */
+  border: none;
+  border-radius: 25px;
+  margin: 10px 0;
+  color: #fff;
+}
+.footerText {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  width: 40%;
+  justify-content: space-around;
+}
+a:hover {
+  cursor: pointer;
+}

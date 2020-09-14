@@ -4,11 +4,245 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etsy Page</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://use.fontawesome.com/37c56b304c.js"></script>
   </head>
   <body>
-    <div id="main-container"></div>
-    <div id="nav-bar"></div>
-    <div id="items-container"></div>
-    <div id="footer"></div>
+    <div id="main-container">
+      <div id="header">
+        <span id="etsyLogo">Etsy</span>
+        <input placeholder="whiskey"id="headerInput" type="text" />
+        <i id="timesIcon" class="fa fa-times fa-lg"></i>
+        <i id="searchIcon" class="fa fa-search fa-lg"></i>
+        <span id="signInCart">
+          <ul id="header-list">
+            <li class="header-list-items">Sign in</li>
+            <li class="header-list-items">
+              <i class="fa fa-shopping-cart fa-lg"></i>
+            </li>
+          </ul>
+        </span>
+      </div>
+      <div id="nav-bar">
+        <ul id="nav-list">
+          <li class="nav-list-items" id="everydayFinds">Everyday Finds</li>
+          <div class="dropDown">
+            <li id= "jewelryAnchor" class="nav-list-items">Jewelry & Accessories</li>
+            <div class="dropContent">
+              <div id="showContent">
+              <div id="anchorContainer">
+              <a id="firstAnchor" href="#">All Jewelry & Accessories <i id="boldArrow" class="anchorIcons fa fa-arrow-right"></i
+              ></a>
+              <a id="accessoriesShow" href="#">Accessories <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a id="bagsShow" href="#">Bags & Purses <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a id="necklacesShow" href="#">Necklaces <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a id="ringsShow"href="#">Rings <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a id="earringsShow" href="#">Earrings <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a id="braceletsShow" href="#">Bracelets <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a id="bodyjewelryShow"href="#">Body Jewelry <i class="anchorIcons fa fa-angle-right"></i
+              ></a>
+              <a href="#">All Jewelry <i id="boldArrow2" class="anchorIcons fa fa-arrow-right"></i
+              ></a>
+              </div>
+             
+            <div id="dropC2Hide">
+             <div id="dropC2">
+              <a class="boldAnchor" href="#">Hats & Caps</a>
+              <a href="#">Beanies & Winter Hats</a>
+              <a class="boldAnchor" href="#">Hair Accessories</a>
+              <a href="#">Headbands</a>
+              <a href="#">Fascinators & Mini Hats</a>
+              <a href="#">Wreaths & Tiaras</a>
+              <a class="boldAnchor" href="#">Sunglasses & Eyewear</a>
+              <a class="boldAnchor" href="#">Scarves & Wraps</a>
+              <a class="boldAnchor" href="#">Belts & Suspenders</a>
+              <a class="boldAnchor" href="#">Keychains & Lanyards</a>
+              <a class="boldAnchor" href="#">Gloves & Mittens</a>
+              <a class="boldAnchor" href="#">Umbrellas & Rain Accessories</a>
+              <a class="boldAnchor" href="#" style="font-size: 14px">All Accessories ⭢</a>
+             </div>
+             <div id="dropC3">
+               <a class="boldAnchor" href="#">Backpacks</a>
+               <a class="boldAnchor" href="#">Handbags</a>
+               <a href="#">Clutches & Evening Bags</a>
+               <a href="#">Shoulder Bags</a>
+               <a class="boldAnchor" href="#">Diaper Bags</a>
+               <a class="boldAnchor" href="#">Luggage & Duffel Bags</a>
+               <a class="boldAnchor" href="#">Phone Cases</a>
+               <a class="boldAnchor" href="#" style="font-size: 14px">All Bags & Purses ⭢</a>
+             </div>
+            <div id="dropC4">
+              <a class="boldAnchor" href="#">Pendants</a>
+              <a class="boldAnchor" href="#">Chokers</a>
+              <a class="boldAnchor" href="#">Charm Necklaces</a>
+              <a class="boldAnchor" href="#">Crystal Necklaces</a>
+              <a class="boldAnchor" href="#">Monogram & Name Necklaces</a>
+              <a class="boldAnchor" href="#">Beaded Necklaces</a>
+              <a class="boldAnchor" href="#">Chains</a>
+              <a class="boldAnchor" href="#">Bib Necklaces</a>
+              <a class="boldAnchor" href="#">Tassel Necklaces</a>
+              <a class="boldAnchor" href="" style="font-size: 14px">All Necklaces ⭢</a>
+            </div>
+            <div id="dropC5">
+              <a class="boldAnchor" href="#">Stackable Rings</a>
+              <a class="boldAnchor" href="#">Statement Rings</a>
+              <a class="boldAnchor" href="#">Bands</a>
+              <a class="boldAnchor" href="#">Signet Rings</a>
+              <a class="boldAnchor" href="#">Multi-Stone Rings</a>
+              <a class="boldAnchor" href="#">Solitaire Rings</a>
+              <a class="boldAnchor" href="#">Midi Rings</a>
+              <a class="boldAnchor" href="#">Wedding & Engagement</a>
+              <a href="#">Engagement Rings</a>
+              <a href="#">Wedding Bands</a>
+              <a href="#">Promise Rings</a>
+              <a href="#">Bridal Sets</a>
+              <a class="boldAnchor" href="#" style="font-size: 14px">All Rings ⭢</a>
+            </div>
+            <div id="dropC6">
+              <a class="boldAnchor" href="#">Dangle & Drop Earrings</a>
+              <a class="boldAnchor" href="#">Stud Earrings</a>
+              <a class="boldAnchor" href="#">Hoop Earrings</a>
+              <a class="boldAnchor" href="#">Chandelier Earrings</a>
+              <a class="boldAnchor" href="#">Earjackets & Climbers</a>
+              <a class="boldAnchor" href="#">Cluster Earrings</a>
+              <a class="boldAnchor" href="#">Cuff & Wrap Earrings</a>
+              <a class="boldAnchor" href="#">Clip-On Earrings</a>
+              <a class="boldAnchor" href="#" style="font-size: 14px">All Earrings ⭢</a>
+            </div>
+            <div id="dropC7">
+              <a class="boldAnchor" href="#">Breaded Bracelets</a>
+              <a class="boldAnchor" href="#">Bangles</a>
+              <a class="boldAnchor" href="#">Charm Bracelets</a>
+              <a class="boldAnchor" href="#">Woven & Brided Braceletes</a>
+              <a class="boldAnchor" href="#">Cuff Bracelets</a>
+              <a class="boldAnchor" href="#">Chain & Link Bracelets</a>
+              <a class="boldAnchor" href="#" style="font-size: 14px">All Bracelets ⭢</a>
+            </div>
+            <div id="dropC8">
+              <a class="boldAnchor" href="#">Anklets</a>
+              <a class="boldAnchor" href="#">Hair Jewelry</a>
+              <a class="boldAnchor" href="#">Nose Rings & Studs</a>
+              <a class="boldAnchor" href="#">Arms Bands</a>
+              <a class="boldAnchor" href="#">Nipple Jewelry</a>
+              <a class="boldAnchor" href="#">Belly Rings</a>
+              <a class="boldAnchor" href="#">Shoulder Jewelry</a>
+              <a class="boldAnchor" href="#">Toe Rings</a>
+              <a class="boldAnchor" href="#">Lip Rings</a>
+              <a class="boldAnchor" href="#" style="font-size: 14px">All Body Jewelry ⭢</a>
+            </div>
+            </div>
+            <div id="sideImage">
+              <img src="https://i.etsystatic.com/8595828/c/2068/1643/347/721/il/663a12/1888311329/il_340x270.1888311329_cctg.jpg" alt="">
+            </div>
+            </div>
+          </div>
+          </div>
+          <div class="dropDown">
+            <li class="nav-list-items">Clothing & Shoes</li>
+            <div class="dropContent">
+              <a class="firstAnchor" href=""
+                >All Clothing & Shoes <i class="fa fa-arrow-right"></i
+              ></a>
+              <a href="">Women's <i class="fa fa-angle-right"></i></a>
+              <a href="">Men's <i class="fa fa-angle-right"></i></a>
+              <a href="">Kids' & Baby <i class="fa fa-angle-right"></i></a>
+              <a href="">Bags & Purses <i class="fa fa-angle-right"></i></a>
+            </div>
+          </div>
+  
+          <li class="nav-list-items">Home & Living</li>
+          <li class="nav-list-items">Wedding & Party</li>
+          <li class="nav-list-items">Toys & Entertainment</li>
+          <li class="nav-list-items">Art & Collectibles</li>
+          <li class="nav-list-items">Craft Supplies</li>
+          <li class="nav-list-items"><i class="fa fa-gift"></i> Gifts</li>
+        </ul>
+      </div>
+      <div id="containerBtns">
+        <button id="filterBtn">☰ Filters</button>
+        <button id="sortBtn">↑↓ Sort by: Relevancy ▼</button>
+      </div>
+      <div id="items-container"></div>
+      <div id="footer">
+      <div class="footer1">
+        <h2>
+          Yes! Send me exclusive offers, unique gift ideas, and personalized
+          tips for shopping and selling on Etsy.
+        </h2>
+        <form id="emailForm" action="">
+          <label for="email"></label>
+          <input id="email" name="email" type="email" placeholder="Enter your email"/>
+          <button id="subscribe">Subscribe</button>
+        </form>
+      </div>
+      <div class="footer2">
+        <div class="footerCells">
+          <ul><h3>Shop</h3></ul>
+          <a href="#"><li>Gift cards</li></a>
+          <a href="#"><li>Etsy blog</li></a>
+        </div>
+        <div class="footerCells">
+          <ul><h3>Sell</h3></ul>
+          <a href="#"><li>Sell on Etsy</li></a>
+          <a href="#"><li>Teams</li></a>
+          <a href="#"><li>Forums</li></a>
+          <a href="#"><li>Affiliates</li></a>
+        </div>
+        <div class="footerCells">
+          <ul><h3>About</h3></ul>
+          <a href="#"><li>Etsy, Inc.</li></a>
+          <a href="#"><li>Policies</li></a>
+          <a href="#"><li>Investors</li></a>
+          <a href="#"><li>Careers</li></a>
+          <a href="#"><li>Press</li></a>
+          <a href="#"><li>Impact</li></a>
+        </div>
+        <div class="footerCells">
+          <ul><h3>Help</h3></ul>
+          <a href="#"><li>Help center</li></a>
+          <a href="#"><li>Privacy settings</li></a>
+           <div>
+            <button id="etsyApp">
+              <a href="https://www.etsy.com/mobile">
+              <i class="fa fa-etsy etsyIcon" aria-hidden="true"></i> Download the Etsy
+              app
+            </button></a>
+          </div>
+            <div id="soMediaContainer">
+            <a href="https://www.instagram.com/etsy/" target="_blank"><i class="fa fa-instagram soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/Etsy" target="_blank"><i class="fa fa-facebook-official soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://www.pinterest.com/etsy/" target="_blank"><i class="fa fa-pinterest soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/etsy" target="_blank"><i class="fa fa-twitter soMediaIcon" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/etsy" target="_blank"><i class="fa fa-youtube-play soMediaIcon" aria-hidden="true"></i></a>
+
+          </div>
+        </div>
+      </div>
+          <div class="footer3">
+            <div>
+              <button id="regionFilter">
+                United States | English (US) | $(USD)
+              </button>
+            </div>
+            <div class="footerText">
+              <span>© 2020 Etsy, Inc.</span>
+              <span><a href="#">Terms of Use</a></span>
+              <span><a href="#">Privacy</a></span>
+              <span><a href="#">Interest-based-ads</a></span>
+            </div>
+          </div>
+        </div>
+    <script src="items.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
