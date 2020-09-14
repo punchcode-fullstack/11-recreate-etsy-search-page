@@ -1,6 +1,4 @@
-// const itemList = items.resdivts
-
-//nest image in div to fix quality ==>> go css line 46
+//Grid java (Jesse)
 
 const container = document.getElementById("items-container")
 
@@ -9,19 +7,32 @@ const etsyFunction = items.results
   .map((item) => {
     // const itemList = items.results
     // const container = document.getElementById("items-container")
-    console.log(item.Images)
+    console.log(item)
     return `<div class="cells">
+    <a href="#"><div class="favIcon hidden">
+    <i class="fa fa-heart-o"></i>
+    </div></a>
+    <a href="${item.url}" target="_blank">
   <img class="images" src="${item.Images[0].url_fullxfull}" />
   <h1>${item.title}</h1>
   <p>${item.Shop.shop_name}</p>
   <p class="rating">★★★★★<span> (${item.views})</span></p>
-  <p class="price">$${item.price}</p>
+  <p class="price">$${item.price}</p></a>
   </div>`
     // return (container.innerHTML = items.map(item))
   })
   .join("")
 container.innerHTML = etsyFunction
 
+// this function is for displaying the heart icon over images
+
+// document.querySelector(".cells").addEventListener("mouseover", function (e) {
+//   // let cells = e.target.className.includes("cells")
+//   let favIcon = e.target.className.includes("favIcon")
+//   if (favIcon === true) {
+//     document.querySelector(".favIcon").className.toggle("hidden")
+//   }
+// })
 // original function, decent looking grid
 
 // const etsyFunction = items.results
