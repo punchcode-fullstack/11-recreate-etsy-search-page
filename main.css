@@ -17,7 +17,7 @@
 #items-container a {
   text-decoration: none;
 }
-h1 {
+.cells h1 {
   font-size: 15px;
   color: #000;
   font-weight: lighter;
@@ -26,7 +26,7 @@ h1 {
   text-overflow: ellipsis;
   margin: 1.5% 0%;
 }
-h2 {
+.footer1 h2 {
   color: #595959;
   font-size: 18px;
   /* font-weight: lighter; */
@@ -109,14 +109,27 @@ div p {
   background: #fff;
   display: flex;
   justify-content: center;
-}
-input {
   border: none;
-  /* width: 30%; */
-  /* height: 40px; */
   flex-grow: 1;
-  /* border-radius: 30px 30px; */
 }
+#emailForm {
+  font-size: 20px;
+  word-spacing: 5px;
+  letter-spacing: 1px;
+  width: 40%;
+  height: 55px;
+  padding: 0% 2%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+/* input { */
+/* border: none; */
+/* width: 30%; */
+/* height: 40px; */
+/* flex-grow: 1; */
+/* border-radius: 30px 30px; */
+/* } */
 input:focus {
   outline: none;
 }
@@ -150,10 +163,10 @@ button:hover {
   font-size: 12px;
   margin: 0 auto;
 }
-ul {
+.footerCells ul {
   margin: 0% 0% 20px;
 }
-li {
+.footerCells li {
   margin: 0% 0% 15px;
   list-style-type: none;
 }
